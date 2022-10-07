@@ -6,6 +6,6 @@
 n = 4
 
 if n%2==0:
-    print("prime")
+    print("Even")
 else:
-    print("Not Prime")
+    print("Odd")
