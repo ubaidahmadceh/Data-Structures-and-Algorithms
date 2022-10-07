@@ -2,9 +2,10 @@
 #Thanks
 # ----------------------------------------------------------------------------
 
-n = [1, 2, 3]
-rev = []
-for i in range(1, len(n)+1):
-    rev.append(n[-i])
 
-print(rev)
+n = 4
+
+if n%2==0:
+    print("prime")
+else:
+    print("Not Prime")

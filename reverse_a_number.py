@@ -2,10 +2,21 @@
 #Thanks
 # ----------------------------------------------------------------------------
 
+# Reverse a number by remainder-modulus(%) approach 
 
-my_list = [1, 2, 3, 1]
+n = 7547
+n = str(n)
+store = []
 
-for i in my_list:
-    for j in my_list:
-        if i == j:
-            print(i, j)
+for i in n:
+    store.append(int(i)%int(n))
+
+store_reversed = []
+for i in range(1, len(store)+1):
+    store_reversed.append(store[-i])
+
+num_reversed_str = ""
+for i in store_reversed:
+    num_reversed_str += str(i)
+
+print(int(num_reversed_str))
