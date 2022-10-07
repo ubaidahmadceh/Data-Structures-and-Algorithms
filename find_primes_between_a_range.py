@@ -12,7 +12,7 @@ def prime_or_not(num):
             if num%i == 0:
                 return False
             else:
-                return True
+                return True 
 
 for i in range(range_start, range_end+1):
     if prime_or_not(i)==True:
