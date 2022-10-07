@@ -4,19 +4,18 @@
 
 range_start= int(input("Enter range_start: "))
 range_end = int(input("Enter range_end: "))
-num_in_range = []
+primes = [] 
 
-for i in range(range_start, range_end+1):
-    num_in_range.append(i)
-
-primes = []
-for num in num_in_range:
+def prime_or_not(num):
     if num > 1:
         for i in range(2,num):
             if num%i == 0:
-                print("not prime")
+                return False
             else:
-                primes.append(num)
+                return True
 
+for i in range(range_start, range_end+1):
+    if prime_or_not(i)==True:
+        primes.append(i)
 
-print(set(primes))
+print(primes)
