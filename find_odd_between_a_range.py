@@ -3,11 +3,9 @@
 # ----------------------------------------------------------------------------
 
 
-evens = []
+odds = []
 for num in range(1, 11):
-    if num%2==0:
-        evens.append(num)
+    if num%2!=0:
+        odds.append(num)
 
-print(evens)
-
-
+print(odds)
